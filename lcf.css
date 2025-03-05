@@ -1,0 +1,303 @@
+body { 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #CCF;
+  color: black;
+  font-family: Garamond, serif;
+  font-size: large;
+}
+
+div { 
+  margin: 0;
+}
+
+/* Barras de topo e rodapé */
+div.titlebar, div.botbar { 
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: #09F;
+  color: white;
+}
+
+div.titlebar { 
+  top: 0;
+  height: 3.8em;
+  text-align: center;
+}
+
+/* Barra central, onde tudo o resto se situa */
+div.middle { 
+  position: absolute;
+  top: 3.8em;
+  bottom: 3em;
+  z-index: 30;
+  width: 100%;
+ }
+
+div.main { 
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 1em;
+  overflow-y: scroll;
+  left: 0;
+  right: 0;
+  padding: 0 10%;
+  width: 80%;
+ }
+
+/* Barra de títulos */
+.titlebar * { 
+  padding: 1ex 0 0 0;
+  margin: 0;
+}
+
+/* Barra de rodapé, incluindo o menu de navegação */
+div.botbar { 
+  bottom: 0;
+  height: 3.3em;
+  font-size: 90%;
+}
+
+.botbar table {
+  margin: .4em auto;
+}
+
+.botbar td {
+  padding: 0;
+  text-align: center;
+  width: 8em;
+}
+
+.botbar img {
+  vertical-align: middle;
+}
+
+.botbar a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+
+.botbar a:hover { 
+  font-weight: bold;
+ }
+
+a.estacategoria { 
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* Títulos e cabeçalhos */
+
+h3 { 
+  font-size: 150%;
+  margin-left: -5%;
+}
+
+h4 { 
+  margin-left: -5%;
+  font-size: 125%;
+  margin-top: 1em; margin-bottom: 1em;
+}
+
+h5 { 
+  font-size: 100%;
+  margin-top: 0em; margin-bottom: 0em;
+}
+
+/* Links */
+a { 
+  text-decoration: underline;
+}
+
+:link { color: #00F; }
+:visited { color: #00F; }
+a:hover { color: #00F; }
+
+/* Outras divs */
+
+div#foto {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 5px;
+    border: thin solid white;
+}
+
+.meiapagina {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pub p, .meiapagina p { 
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-indent: 0em;
+}
+
+div.abstract { 
+  background: #9CF;
+  padding: .5em;
+  margin: 2em;
+  text-indent: 0em;
+  font-size: 75%;
+  margin-top: .5em; margin-bottom: .5em;
+  border: none;
+}
+
+.numero {
+  text-align: right;
+  display: inline-block;
+  position: relative;
+  left: -2em;
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.invisible {
+  color: #CCF;
+}
+
+/* Generalidades diversas */
+.center { 
+  text-align: center;
+}
+
+img { 
+  border: none;
+  padding: 0;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+ul { 
+  margin: .3em 0;
+}
+
+hr {
+  width: 80%;
+}
+
+.right { 
+  text-align: right;
+}
+
+.title {
+  font-weight: bold;
+}
+
+span.doi {
+  font-family: Courier;
+  font-weight: bold;
+  font-size: smaller;
+}
+
+dt { 
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+select {
+  font-size: larger;
+}
+
+span.shout{
+  color: red;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+/*
+body { 
+  margin-left: 10%; margin-right: 10%;
+  color: #000;
+  background: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+.inv { 
+  color: #999;
+}
+
+.mytit { 
+  font-size: 150%;
+}
+
+h1, h2, h3, h4, h5 { 
+  font-family: Garamond, serif;
+}
+
+h1{ 
+  margin-top: 1em;
+  font-size: 300%;
+}
+
+h2 { 
+  margin-left: -5%;
+  font-size: 200%;
+}
+
+h5 { 
+  font-size: 100%;
+  margin-top: 1em; margin-bottom: 1em;
+}
+
+p { 
+  text-indent: 2em; margin-top: 0; margin-bottom: 0;
+}
+
+p.dropcap { 
+  text-indent: 0em; margin-top: 1em;
+}
+
+p.dropcap:first-letter { 
+  font-family: "Lucida Calligraphy", palatino, serif;
+  font-weight: bold;
+  font-size: 400%;
+  float: left;
+  padding-right: .1em;
+}
+
+div.center { 
+  text-align: center;
+}
+
+pre {
+  font-family: monospace;
+}
+
+span.shout{
+  color: red;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+td { 
+  padding: 1em;
+}
+
+hr {
+  margin-top: 2em;
+}
+
+table { 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  padding-bottom: 1em;
+}
+*/
